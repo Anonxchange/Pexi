@@ -434,102 +434,22 @@ export function PexlyHomepage() {
                         <div className={"tab-panel-content-wrapper"}>
                           <div className={"tab-panel-content-image-block"}>
                             <div className={"px-art"} style={{"background": "#bcc6ff"} as any}>
-                              <div className={"px-phone"} style={{"--dy": "0%"} as any}>
-                                <div className={"px-notch"}></div>
-                                <div className={"px-screen"}>
-                                  <div className={"ph-h"}>
-                                    <b>
-                                      {"pexly"}
-                                    </b>
-                                    <span className={"ph-w"}>
-                                      {"0x7a…93f2"}
-                                    </span>
+                              <div className={"gc-panel"} aria-label={"Gift card brands"} style={{"width": "86%", "aspectRatio": "1 / 0.92", "display": "flex", "flexDirection": "column", "justifyContent": "center", "gap": "5%", "overflow": "hidden", "borderRadius": "18px", "border": "1px solid rgba(255,255,255,.18)", "background": "linear-gradient(160deg,#2a3a63,#0b1630)", "boxShadow": "0 20px 50px rgba(9,30,28,.28)"} as any}>
+                                  <div style={{"display": "flex", "gap": "3.5%", "marginLeft": "-7%"} as any}>
+                                      <img src={"/marketing-media/gift-cards/hm.png"} alt={""} loading={"lazy"} style={{"width": "30%", "flex": "none", "aspectRatio": "191 / 105", "objectFit": "cover", "borderRadius": "7px", "boxShadow": "0 4px 14px rgba(0,0,0,.35)"} as any} />
+                                      <img src={"/marketing-media/gift-cards/amazon.png"} alt={""} loading={"lazy"} style={{"width": "30%", "flex": "none", "aspectRatio": "191 / 105", "objectFit": "cover", "borderRadius": "7px", "boxShadow": "0 4px 14px rgba(0,0,0,.35)"} as any} />
+                                      <img src={"/marketing-media/gift-cards/airbnb.png"} alt={""} loading={"lazy"} style={{"width": "30%", "flex": "none", "aspectRatio": "191 / 105", "objectFit": "cover", "borderRadius": "7px", "boxShadow": "0 4px 14px rgba(0,0,0,.35)"} as any} />
                                   </div>
-                                  <div className={"ph-t"}>
-                                    {"Gift Cards"}
+                                  <div style={{"display": "flex", "gap": "3.5%", "marginLeft": "5%"} as any}>
+                                      <img src={"/marketing-media/gift-cards/uber.png"} alt={""} loading={"lazy"} style={{"width": "30%", "flex": "none", "aspectRatio": "191 / 105", "objectFit": "cover", "borderRadius": "7px", "boxShadow": "0 4px 14px rgba(0,0,0,.35)"} as any} />
+                                      <img src={"/marketing-media/gift-cards/uber-eats.png"} alt={""} loading={"lazy"} style={{"width": "30%", "flex": "none", "aspectRatio": "191 / 105", "objectFit": "cover", "borderRadius": "7px", "boxShadow": "0 4px 14px rgba(0,0,0,.35)"} as any} />
+                                      <img src={"/marketing-media/gift-cards/hm.png"} alt={""} loading={"lazy"} style={{"width": "30%", "flex": "none", "aspectRatio": "191 / 105", "objectFit": "cover", "borderRadius": "7px", "boxShadow": "0 4px 14px rgba(0,0,0,.35)"} as any} />
                                   </div>
-                                  <div className={"chips"}>
-                                    <span className={"on"}>
-                                      {"All"}
-                                    </span>
-                                    <span className={""}>
-                                      {"Shopping"}
-                                    </span>
-                                    <span className={""}>
-                                      {"Gaming"}
-                                    </span>
-                                    <span className={""}>
-                                      {"Streaming"}
-                                    </span>
+                                  <div style={{"display": "flex", "gap": "3.5%", "marginLeft": "-12%"} as any}>
+                                      <img src={"/marketing-media/gift-cards/airbnb.png"} alt={""} loading={"lazy"} style={{"width": "30%", "flex": "none", "aspectRatio": "191 / 105", "objectFit": "cover", "borderRadius": "7px", "boxShadow": "0 4px 14px rgba(0,0,0,.35)"} as any} />
+                                      <img src={"/marketing-media/gift-cards/amazon.png"} alt={""} loading={"lazy"} style={{"width": "30%", "flex": "none", "aspectRatio": "191 / 105", "objectFit": "cover", "borderRadius": "7px", "boxShadow": "0 4px 14px rgba(0,0,0,.35)"} as any} />
+                                      <img src={"/marketing-media/gift-cards/uber.png"} alt={""} loading={"lazy"} style={{"width": "30%", "flex": "none", "aspectRatio": "191 / 105", "objectFit": "cover", "borderRadius": "7px", "boxShadow": "0 4px 14px rgba(0,0,0,.35)"} as any} />
                                   </div>
-                                  <div className={"rw"}>
-                                    <span className={"ic"} style={{"background": "#7c5cff"} as any}>
-                                      {"S"}
-                                    </span>
-                                    <div className={"t"}>
-                                      <b>
-                                        {"Shopping Card"}
-                                      </b>
-                                      <small>
-                                        {"$25 · Instant"}
-                                      </small>
-                                    </div>
-                                    <div className={"p"}>
-                                      {"0.00038 BTC"}
-                                    </div>
-                                  </div>
-                                  <div className={"rw"}>
-                                    <span className={"ic"} style={{"background": "#1fa37a"} as any}>
-                                      {"G"}
-                                    </span>
-                                    <div className={"t"}>
-                                      <b>
-                                        {"Gaming Card"}
-                                      </b>
-                                      <small>
-                                        {"$20 · Instant"}
-                                      </small>
-                                    </div>
-                                    <div className={"p"}>
-                                      {"20.1 USDT"}
-                                    </div>
-                                  </div>
-                                  <div className={"rw"}>
-                                    <span className={"ic"} style={{"background": "#ff6b6b"} as any}>
-                                      {"M"}
-                                    </span>
-                                    <div className={"t"}>
-                                      <b>
-                                        {"Streaming Card"}
-                                      </b>
-                                      <small>
-                                        {"$15 · Instant"}
-                                      </small>
-                                    </div>
-                                    <div className={"p"}>
-                                      {"0.0049 ETH"}
-                                    </div>
-                                  </div>
-                                  <div className={"rw"}>
-                                    <span className={"ic"} style={{"background": "#2f80ed"} as any}>
-                                      {"T"}
-                                    </span>
-                                    <div className={"t"}>
-                                      <b>
-                                        {"Travel Card"}
-                                      </b>
-                                      <small>
-                                        {"$50 · Instant"}
-                                      </small>
-                                    </div>
-                                    <div className={"p"}>
-                                      {"50.2 USDC"}
-                                    </div>
-                                  </div>
-                                  <div className={"btn"}>
-                                    {"Buy with crypto"}
-                                  </div>
-                                </div>
                               </div>
                             </div>
                           </div>
