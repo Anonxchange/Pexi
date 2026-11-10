@@ -1557,13 +1557,13 @@ export function PexlyHomepage() {
                         <div className={"card-slide-text-block _1st w-variant-0804d94b-db76-5d91-8c7b-56186dc35489"}>
                           <div className={"card-slide-title-block"}>
                             <h3 className={"h3-heading white w-variant-0804d94b-db76-5d91-8c7b-56186dc35489"}>
-                              {"Shopping Gift Cards"}
+                              {"Streaming & Music"}
                             </h3>
                           </div>
                           <div className={"card-slide-para-block"}>
                             <div className={"margin-top-12px"}>
                               <p className={"p-regular white mb-14 w-variant-0804d94b-db76-5d91-8c7b-56186dc35489"}>
-                                {"Instant digital delivery. Pay with crypto, get your code in seconds and redeem it with the brand."}
+                                {"Pay for music and streaming subscriptions with crypto, then enjoy instant access."}
                               </p>
                             </div>
                           </div>
@@ -1595,13 +1595,13 @@ export function PexlyHomepage() {
                         <div className={"card-slide-text-block _1st w-variant-0804d94b-db76-5d91-8c7b-56186dc35489"}>
                           <div className={"card-slide-title-block"}>
                             <h3 className={"h3-heading white w-variant-0804d94b-db76-5d91-8c7b-56186dc35489"}>
-                              {"Shopping Gift Cards"}
+                              {"Mobile Top Up"}
                             </h3>
                           </div>
                           <div className={"card-slide-para-block"}>
                             <div className={"margin-top-12px"}>
                               <p className={"p-regular white mb-14 w-variant-0804d94b-db76-5d91-8c7b-56186dc35489"}>
-                                {"Instant digital delivery. Pay with crypto, get your code in seconds and redeem it with the brand."}
+                                {"Recharge airtime and data for any phone number with BTC, USDT and more."}
                               </p>
                             </div>
                           </div>

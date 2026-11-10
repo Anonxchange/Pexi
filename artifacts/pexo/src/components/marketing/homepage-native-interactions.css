@@ -69,3 +69,40 @@
 .current-source-page-home .card-slide-content.is-expanded .card-slide-para-block {
   display: block;
 }
+
+.current-source-page-home .faq-question-icon-block {
+  position: relative;
+  display: block;
+  flex: 0 0 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.current-source-page-home .faq-question-icon-block .faq-question-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.125rem;
+  height: 2px;
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
+
+.current-source-page-home .faq-question-icon-block .faq-ques-cross-icon {
+  display: none;
+}
+
+.current-source-page-home .faq-question-icon-block::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 1.125rem;
+  background: currentColor;
+  content: "";
+  transform: translate(-50%, -50%);
+}
+
+.current-source-page-home .faq-item.w--open .faq-question-icon-block::after {
+  display: none;
+}
