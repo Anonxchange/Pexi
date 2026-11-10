@@ -362,6 +362,66 @@ function setupNativeMarquee(marquee: HTMLElement, reducedMotion: boolean): Clean
   };
 }
 
+function setupCardDescriptionToggles(root: HTMLElement): Cleanup {
+  const cards = Array.from(root.querySelectorAll<HTMLElement>(".card-slide-content")).filter(
+    (card) => !card.closest("[data-home-loop-clone]"),
+  );
+  const previousAttributes = new Map<
+    HTMLElement,
+    { role: string | null; tabIndex: string | null; expanded: string | null }
+  >();
+  cards.forEach((card) => {
+    previousAttributes.set(card, {
+      role: card.getAttribute("role"),
+      tabIndex: card.getAttribute("tabindex"),
+      expanded: card.getAttribute("aria-expanded"),
+    });
+  });
+
+  const toggleCard = (card: HTMLElement) => {
+    const expanded = !card.classList.contains("is-expanded");
+    card.classList.toggle("is-expanded", expanded);
+    card.setAttribute("aria-expanded", String(expanded));
+  };
+
+  const listeners = cards.map((card) => {
+    const handleClick = (event: MouseEvent) => {
+      if (event.target instanceof Element && event.target.closest("a, button")) return;
+      toggleCard(card);
+    };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      toggleCard(card);
+    };
+
+    card.setAttribute("role", "button");
+    card.setAttribute("tabindex", "0");
+    card.setAttribute("aria-expanded", "false");
+    card.addEventListener("click", handleClick);
+    card.addEventListener("keydown", handleKeyDown);
+
+    return { card, handleClick, handleKeyDown };
+  });
+
+  return () => {
+    listeners.forEach(({ card, handleClick, handleKeyDown }) => {
+      card.removeEventListener("click", handleClick);
+      card.removeEventListener("keydown", handleKeyDown);
+      card.classList.remove("is-expanded");
+
+      const previous = previousAttributes.get(card);
+      if (!previous) return;
+      if (previous.role === null) card.removeAttribute("role");
+      else card.setAttribute("role", previous.role);
+      if (previous.tabIndex === null) card.removeAttribute("tabindex");
+      else card.setAttribute("tabindex", previous.tabIndex);
+      if (previous.expanded === null) card.removeAttribute("aria-expanded");
+      else card.setAttribute("aria-expanded", previous.expanded);
+    });
+  };
+}
+
 export function setupHomepageNativeInteractions(
   root: HTMLElement,
   reducedMotion: boolean,
@@ -375,6 +435,7 @@ export function setupHomepageNativeInteractions(
       setupNativeMarquee(marquee, reducedMotion),
     ),
     ...Array.from(root.querySelectorAll<HTMLElement>(".swiper.cr-card")).map(setupNativeSwiper),
+    setupCardDescriptionToggles(root),
   ];
 
   return () => {

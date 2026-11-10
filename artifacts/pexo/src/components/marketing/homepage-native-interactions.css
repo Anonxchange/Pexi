@@ -45,3 +45,27 @@
 .current-source-page-home .how-it-work-tab-link.w--current .tab-link-text-block {
   display: block;
 }
+
+.current-source-page-home .card-slide-content {
+  cursor: pointer;
+}
+
+.current-source-page-home .card-slide-content:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -4px;
+}
+
+.current-source-page-home .card-slide-para-block {
+  display: none;
+}
+
+.current-source-page-home .card-slide-content.is-expanded .card-slide-text-block {
+  box-sizing: border-box;
+  height: 50%;
+  max-height: 50%;
+  overflow-y: auto;
+}
+
+.current-source-page-home .card-slide-content.is-expanded .card-slide-para-block {
+  display: block;
+}
