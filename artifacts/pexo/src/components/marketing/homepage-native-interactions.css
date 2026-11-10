@@ -37,3 +37,11 @@
 .current-source-page-home .faq-ans-block[hidden] {
   display: none !important;
 }
+
+.current-source-page-home .how-it-work-tab-link .tab-link-text-block {
+  display: none;
+}
+
+.current-source-page-home .how-it-work-tab-link.w--current .tab-link-text-block {
+  display: block;
+}
